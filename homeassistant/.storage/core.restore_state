@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.joe_collins",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "joe_collins",
+          "user_id": "d299d7569da84904b20e945186c5b629",
+          "friendly_name": "Joe Collins"
+        },
+        "last_changed": "2022-12-16T02:34:31.410755+00:00",
+        "last_updated": "2022-12-16T02:34:35.906811+00:00",
+        "context": {
+          "id": "01GMCCH4G2C4SN05VEV6DEJGTS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-16T02:36:15.639933+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.frigate_server",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.11.1",
+          "in_progress": false,
+          "latest_version": "0.11.1",
+          "release_summary": null,
+          "release_url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.11.1",
+          "skipped_version": null,
+          "title": null,
+          "entity_picture": "https://brands.home-assistant.io/_/frigate/icon.png",
+          "friendly_name": "Frigate Server",
+          "supported_features": 0
+        },
+        "last_changed": "2022-12-16T02:35:46.141312+00:00",
+        "last_updated": "2022-12-16T02:35:46.141312+00:00",
+        "context": {
+          "id": "01GMCCK92XKD4VFCK0P012PJTP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-16T02:36:15.639933+00:00"
+    }
+  ]
+}

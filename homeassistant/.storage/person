@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "Joe Collins",
+        "user_id": "d299d7569da84904b20e945186c5b629",
+        "device_trackers": [],
+        "id": "joe_collins"
+      }
+    ]
+  }
+}

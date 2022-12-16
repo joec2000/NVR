@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "e1cc28aef32434ac952ff40dd6ad153c"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "23131acbee1860eb263b1ce57124814a",
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "04408190ecf8398625ced0006e7ab4a1"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "e722305f12d3f36af20cfebb6d4c96d9",
+        "identifiers": [
+          [
+            "hacs",
+            "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+          ]
+        ],
+        "manufacturer": "hacs.xyz",
+        "model": "",
+        "name_by_user": null,
+        "name": "HACS",
+        "sw_version": "1.28.4",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "13e0d2d1c8824cfa04a86bbeebd6b59a"
+        ],
+        "configuration_url": "http://frigate:5000/cameras/DOORBELL",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e78fb5b13ce2a326ac4272732ee308b5",
+        "identifiers": [
+          [
+            "frigate",
+            "13e0d2d1c8824cfa04a86bbeebd6b59a:doorbell"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "3.0.0/0.11.1-2eada21",
+        "name_by_user": null,
+        "name": "Doorbell",
+        "sw_version": null,
+        "via_device_id": "0168a0844a4ef62f65735642a9e805a9"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "13e0d2d1c8824cfa04a86bbeebd6b59a"
+        ],
+        "configuration_url": "http://frigate:5000/cameras/IP_CAM_DRIVEWAY_1",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9df26abb9e04c3ddda88dfa8b5a8f6fb",
+        "identifiers": [
+          [
+            "frigate",
+            "13e0d2d1c8824cfa04a86bbeebd6b59a:ip_cam_driveway_1"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "3.0.0/0.11.1-2eada21",
+        "name_by_user": null,
+        "name": "Ip Cam Driveway 1",
+        "sw_version": null,
+        "via_device_id": "0168a0844a4ef62f65735642a9e805a9"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "13e0d2d1c8824cfa04a86bbeebd6b59a"
+        ],
+        "configuration_url": "http://frigate:5000/cameras/IP_CAM_DRIVEWAY_2",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8602172c49383be5fe1a91404d2592a9",
+        "identifiers": [
+          [
+            "frigate",
+            "13e0d2d1c8824cfa04a86bbeebd6b59a:ip_cam_driveway_2"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "3.0.0/0.11.1-2eada21",
+        "name_by_user": null,
+        "name": "Ip Cam Driveway 2",
+        "sw_version": null,
+        "via_device_id": "0168a0844a4ef62f65735642a9e805a9"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "13e0d2d1c8824cfa04a86bbeebd6b59a"
+        ],
+        "configuration_url": "http://frigate:5000/cameras/IP_CAM_DRIVEWAY_3",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "35368c6605d2663526e9e711a739f701",
+        "identifiers": [
+          [
+            "frigate",
+            "13e0d2d1c8824cfa04a86bbeebd6b59a:ip_cam_driveway_3"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "3.0.0/0.11.1-2eada21",
+        "name_by_user": null,
+        "name": "Ip Cam Driveway 3",
+        "sw_version": null,
+        "via_device_id": "0168a0844a4ef62f65735642a9e805a9"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "13e0d2d1c8824cfa04a86bbeebd6b59a"
+        ],
+        "configuration_url": "http://frigate:5000/cameras/IP_CAM_NORTHWEST",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9aa688bb2d6d818c40387db95bb0717e",
+        "identifiers": [
+          [
+            "frigate",
+            "13e0d2d1c8824cfa04a86bbeebd6b59a:ip_cam_northwest"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "3.0.0/0.11.1-2eada21",
+        "name_by_user": null,
+        "name": "Ip Cam Northwest",
+        "sw_version": null,
+        "via_device_id": "0168a0844a4ef62f65735642a9e805a9"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "13e0d2d1c8824cfa04a86bbeebd6b59a"
+        ],
+        "configuration_url": "http://frigate:5000",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0168a0844a4ef62f65735642a9e805a9",
+        "identifiers": [
+          [
+            "frigate",
+            "13e0d2d1c8824cfa04a86bbeebd6b59a"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "3.0.0/0.11.1-2eada21",
+        "name_by_user": null,
+        "name": "Frigate",
+        "sw_version": null,
+        "via_device_id": "0168a0844a4ef62f65735642a9e805a9"
+      }
+    ],
+    "deleted_devices": []
+  }
+}

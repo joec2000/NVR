@@ -1,0 +1,152 @@
+2022-12-15 21:34:30.527 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration frigate which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-12-15 21:34:30.528 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-12-15 21:34:31.426 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2022-12-15 21:34:34.330 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://frigate:5000/api/stats: 502, message='Bad Gateway', url=URL('http://frigate:5000/api/stats')
+2022-12-15 21:34:34.335 WARNING (MainThread) [homeassistant.config_entries] Config entry 'frigate:5000' for frigate integration not ready yet; Retrying in background
+2022-12-15 21:34:35.938 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://frigate:5000/api/stats: Cannot connect to host frigate:5000 ssl:default [Connect call failed ('172.18.0.2', 5000)]
+2022-12-15 21:34:45.951 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://frigate:5000/api/stats: 502, message='Bad Gateway', url=URL('http://frigate:5000/api/stats')
+2022-12-15 21:35:05.962 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://frigate:5000/api/stats: 502, message='Bad Gateway', url=URL('http://frigate:5000/api/stats')
+2022-12-15 21:35:46.093 ERROR (MainThread) [homeassistant.components.sensor] Error adding entities for domain sensor with platform frigate
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 428, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 692, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 788, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 449, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 129, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 60, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/client.py", line 207, in async_subscribe
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Cannot subscribe to topic 'frigate/IP_CAM_DRIVEWAY_1/person', MQTT is not enabled
+2022-12-15 21:35:46.111 ERROR (MainThread) [homeassistant.components.sensor] Error while setting up frigate platform for sensor
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 289, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 428, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 692, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 788, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 449, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 129, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 60, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/client.py", line 207, in async_subscribe
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Cannot subscribe to topic 'frigate/IP_CAM_DRIVEWAY_1/person', MQTT is not enabled
+2022-12-15 21:35:46.123 ERROR (MainThread) [homeassistant.components.camera] Error adding entities for domain camera with platform frigate
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 428, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 692, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 788, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 449, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 129, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 60, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/client.py", line 207, in async_subscribe
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Cannot subscribe to topic 'frigate/DOORBELL/recordings/state', MQTT is not enabled
+2022-12-15 21:35:46.132 ERROR (MainThread) [homeassistant.components.camera] Error while setting up frigate platform for camera
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 289, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 428, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 692, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 788, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 449, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 129, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 60, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/client.py", line 207, in async_subscribe
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Cannot subscribe to topic 'frigate/DOORBELL/recordings/state', MQTT is not enabled
+2022-12-15 21:35:46.135 ERROR (MainThread) [homeassistant.components.binary_sensor] Error adding entities for domain binary_sensor with platform frigate
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 428, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 692, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 788, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 449, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 129, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 60, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/client.py", line 207, in async_subscribe
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Cannot subscribe to topic 'frigate/IP_CAM_DRIVEWAY_1/person', MQTT is not enabled
+2022-12-15 21:35:46.141 ERROR (MainThread) [homeassistant.components.binary_sensor] Error while setting up frigate platform for binary_sensor
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 289, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 428, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 692, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 788, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 449, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 129, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 60, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/client.py", line 207, in async_subscribe
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Cannot subscribe to topic 'frigate/IP_CAM_DRIVEWAY_1/person', MQTT is not enabled
+2022-12-15 21:35:46.147 ERROR (MainThread) [homeassistant.components.switch] Error adding entities for domain switch with platform frigate
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 428, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 692, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 788, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 449, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 129, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 60, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/client.py", line 207, in async_subscribe
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Cannot subscribe to topic 'frigate/DOORBELL/detect/state', MQTT is not enabled
+2022-12-15 21:35:46.148 ERROR (MainThread) [homeassistant.components.switch] Error while setting up frigate platform for switch
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 289, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 428, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 692, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 788, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 449, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 129, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/subscription.py", line 60, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/client.py", line 207, in async_subscribe
+    raise HomeAssistantError(
+homeassistant.exceptions.HomeAssistantError: Cannot subscribe to topic 'frigate/DOORBELL/detect/state', MQTT is not enabled
