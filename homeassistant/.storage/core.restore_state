@@ -13,16 +13,198 @@
           "user_id": "d299d7569da84904b20e945186c5b629",
           "friendly_name": "Joe Collins"
         },
-        "last_changed": "2022-12-16T02:34:31.410755+00:00",
-        "last_updated": "2022-12-16T02:34:35.906811+00:00",
+        "last_changed": "2022-12-20T00:45:17.385993+00:00",
+        "last_updated": "2022-12-20T00:45:21.667966+00:00",
         "context": {
-          "id": "01GMCCH4G2C4SN05VEV6DEJGTS",
+          "id": "01GMPFVZW392HC2MK9ZVDK0ASA",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-12-16T02:36:15.639933+00:00"
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.pixel_6_battery_level",
+        "state": "84",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-80",
+          "friendly_name": "Pixel 6 Battery Level"
+        },
+        "last_changed": "2022-12-20T02:10:45.367464+00:00",
+        "last_updated": "2022-12-20T02:10:45.367464+00:00",
+        "context": {
+          "id": "01GMPMRBFQJYP552VTHDFXJNM1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 84,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.pixel_6_battery_state",
+        "state": "discharging",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "Pixel 6 Battery State"
+        },
+        "last_changed": "2022-12-20T02:06:07.912369+00:00",
+        "last_updated": "2022-12-20T02:06:07.912369+00:00",
+        "context": {
+          "id": "01GMPMFWH89RKZNZ2ME139CECX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "discharging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.pixel_6_charger_type",
+        "state": "none",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "Pixel 6 Charger Type"
+        },
+        "last_changed": "2022-12-20T02:06:02.630007+00:00",
+        "last_updated": "2022-12-20T02:06:02.630007+00:00",
+        "context": {
+          "id": "01GMPMFQC6M8ANYPA2XSWA5WRH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.pixel_6_battery_health",
+        "state": "good",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "Pixel 6 Battery Health"
+        },
+        "last_changed": "2022-12-20T00:45:20.761567+00:00",
+        "last_updated": "2022-12-20T00:45:20.761567+00:00",
+        "context": {
+          "id": "01GMPFVYZSTP7RKPR3DJQH7TSZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "good",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.pixel_6_battery_temperature",
+        "state": "90.5",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°F",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "Pixel 6 Battery Temperature"
+        },
+        "last_changed": "2022-12-20T02:14:00.973908+00:00",
+        "last_updated": "2022-12-20T02:14:00.973908+00:00",
+        "context": {
+          "id": "01GMPMYAGD4CK6NZCYWMTY2ET6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 32.5,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.pixel_6_battery_power",
+        "state": "-3.17",
+        "attributes": {
+          "state_class": "measurement",
+          "current": -0.765937,
+          "voltage": 4.142,
+          "unit_of_measurement": "W",
+          "device_class": "power",
+          "icon": "mdi:battery-minus",
+          "friendly_name": "Pixel 6 Battery Power"
+        },
+        "last_changed": "2022-12-20T02:14:48.021008+00:00",
+        "last_updated": "2022-12-20T02:14:48.021008+00:00",
+        "context": {
+          "id": "01GMPMZREN5DMD549NATBAFK1D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": -3.17,
+        "native_unit_of_measurement": "W"
+      },
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.pixel_6_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "Pixel 6 Is Charging"
+        },
+        "last_changed": "2022-12-20T02:06:07.912515+00:00",
+        "last_updated": "2022-12-20T02:06:07.912515+00:00",
+        "context": {
+          "id": "01GMPMFWH8B1MX91JH1XF7NW7Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.pixel_6",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "Pixel 6"
+        },
+        "last_changed": "2022-12-20T00:45:20.762054+00:00",
+        "last_updated": "2022-12-20T00:45:20.762054+00:00",
+        "context": {
+          "id": "01GMPFVYZTZEGENHW0EGB8HKG7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
     },
     {
       "state": {
@@ -41,16 +223,154 @@
           "friendly_name": "Frigate Server",
           "supported_features": 0
         },
-        "last_changed": "2022-12-16T02:35:46.141312+00:00",
-        "last_updated": "2022-12-16T02:35:46.141312+00:00",
+        "last_changed": "2022-12-20T00:45:21.238519+00:00",
+        "last_updated": "2022-12-20T00:45:21.238519+00:00",
         "context": {
-          "id": "01GMCCK92XKD4VFCK0P012PJTP",
+          "id": "01GMPFVZEPCQXZ5WN1SMDSK5C8",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-12-16T02:36:15.639933+00:00"
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ip_cam_garage",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-12-20T02:06:13.012708+00:00",
+          "mode": "parallel",
+          "current": 0,
+          "max": 10,
+          "id": "1671498036786",
+          "friendly_name": "IP_CAM_GARAGE"
+        },
+        "last_changed": "2022-12-20T01:00:40.641478+00:00",
+        "last_updated": "2022-12-20T02:07:26.904035+00:00",
+        "context": {
+          "id": "01GMPMJ9NRPABCQXTAT4VN7M4J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ip_cam_driveway_1",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-12-20T02:11:57.118123+00:00",
+          "mode": "parallel",
+          "current": 0,
+          "max": 10,
+          "id": "1671502134226",
+          "friendly_name": "IP_CAM_DRIVEWAY_1"
+        },
+        "last_changed": "2022-12-20T02:08:57.596776+00:00",
+        "last_updated": "2022-12-20T02:12:31.125258+00:00",
+        "context": {
+          "id": "01GMPMVJRNHN509CS2QKTZ7CJN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ip_cam_driveway_2",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-12-20T02:11:06.851207+00:00",
+          "mode": "parallel",
+          "current": 0,
+          "max": 10,
+          "id": "1671502149608",
+          "friendly_name": "IP_CAM_DRIVEWAY_2"
+        },
+        "last_changed": "2022-12-20T02:09:13.562958+00:00",
+        "last_updated": "2022-12-20T02:12:26.750758+00:00",
+        "context": {
+          "id": "01GMPMVEFYMK0WRN54V7CBVAPV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ip_cam_driveway_3",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-12-20T02:13:20.586211+00:00",
+          "mode": "parallel",
+          "current": 0,
+          "max": 10,
+          "id": "1671502169624",
+          "friendly_name": "IP_CAM_DRIVEWAY_3"
+        },
+        "last_changed": "2022-12-20T02:09:33.944193+00:00",
+        "last_updated": "2022-12-20T02:13:55.830326+00:00",
+        "context": {
+          "id": "01GMPMY5FPY1DKVCZN2E2BJY6F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ip_cam_northwest",
+        "state": "on",
+        "attributes": {
+          "last_triggered": null,
+          "mode": "parallel",
+          "current": 0,
+          "max": 10,
+          "id": "1671502188369",
+          "friendly_name": "IP_CAM_NORTHWEST"
+        },
+        "last_changed": "2022-12-20T02:09:51.153993+00:00",
+        "last_updated": "2022-12-20T02:09:51.153993+00:00",
+        "context": {
+          "id": "01GMPMPPHHYB3V6F57MBCGM7CP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.doorbell",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-12-20T02:13:41.480838+00:00",
+          "mode": "parallel",
+          "current": 0,
+          "max": 10,
+          "id": "1671502205137",
+          "friendly_name": "DOORBELL"
+        },
+        "last_changed": "2022-12-20T02:10:08.215422+00:00",
+        "last_updated": "2022-12-20T02:13:53.741010+00:00",
+        "context": {
+          "id": "01GMPMY3ED8BAJT5752XJ23ZY8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-20T02:15:21.673951+00:00"
     }
   ]
 }

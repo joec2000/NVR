@@ -1,1 +1,48 @@
-[]
+- id: '1671498036786'
+  alias: IP_CAM_GARAGE
+  description: ''
+  use_blueprint:
+    path: algernopeGH/frigate_0.10_notification.yaml
+    input:
+      notify_device: 8e59eefc61f86298eb1b673eb205745d
+      camera: IP_CAM_GARAGE
+- id: '1671502134226'
+  alias: IP_CAM_DRIVEWAY_1
+  description: ''
+  use_blueprint:
+    path: algernopeGH/frigate_0.10_notification.yaml
+    input:
+      notify_device: 8e59eefc61f86298eb1b673eb205745d
+      camera: IP_CAM_DRIVEWAY_1
+- id: '1671502149608'
+  alias: IP_CAM_DRIVEWAY_2
+  description: ''
+  use_blueprint:
+    path: algernopeGH/frigate_0.10_notification.yaml
+    input:
+      camera: IP_CAM_DRIVEWAY_2
+      notify_device: 8e59eefc61f86298eb1b673eb205745d
+- id: '1671502169624'
+  alias: IP_CAM_DRIVEWAY_3
+  description: ''
+  use_blueprint:
+    path: algernopeGH/frigate_0.10_notification.yaml
+    input:
+      camera: IP_CAM_DRIVEWAY_3
+      notify_device: 8e59eefc61f86298eb1b673eb205745d
+- id: '1671502188369'
+  alias: IP_CAM_NORTHWEST
+  description: ''
+  use_blueprint:
+    path: algernopeGH/frigate_0.10_notification.yaml
+    input:
+      camera: IP_CAM_NORTHWEST
+      notify_device: 8e59eefc61f86298eb1b673eb205745d
+- id: '1671502205137'
+  alias: DOORBELL
+  description: ''
+  use_blueprint:
+    path: algernopeGH/frigate_0.10_notification.yaml
+    input:
+      camera: DOORBELL
+      notify_device: 8e59eefc61f86298eb1b673eb205745d

@@ -51,7 +51,7 @@
         "domain": "hacs",
         "title": "",
         "data": {
-          "token": "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"
+          "token": "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"
         },
         "options": {
           "sidepanel_title": "HACS",
@@ -82,6 +82,55 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "f4ae13af0be2433ff3fa6ccc98065123",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "mqtt",
+        "data": {
+          "broker": "mqtt",
+          "port": 1883,
+          "discovery": true,
+          "discovery_prefix": "homeassistant"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d7adb7e7eeb562ff5fa1b3e339be6ef2",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "Pixel 6",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2022.11.0-full (2948)",
+          "device_name": "Pixel 6",
+          "manufacturer": "Google",
+          "model": "Pixel 6",
+          "os_name": "Android",
+          "os_version": "33",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "c-3RQKU1TsurKUBkrR2AeS:APA91bH1NFw3syNx3nsKXbkxJVGqjdVVF62mqCrR5gVmSqMnLQSKV43PM7bKlTyXjV05J2gtxGBQGC_TrgJwR3B88BJpz_oiH21kLX-39YPmkOR8dqn82fvaZ6zYt77oQ7uM58YHAPF-"
+          },
+          "device_id": "47156a56ec87173c",
+          "webhook_id": "787e6e4f2198724d7a579747f551a978178169e78e67a51a4051b11d3c88ba55",
+          "user_id": "d299d7569da84904b20e945186c5b629"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-47156a56ec87173c",
         "disabled_by": null
       }
     ]

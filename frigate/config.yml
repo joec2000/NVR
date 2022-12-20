@@ -57,6 +57,17 @@ cameras:
             - detect
 
 
+  IP_CAM_GARAGE:
+    ffmpeg:
+      inputs:
+        - path: rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.3:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+        - path: rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.3:554/cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+
+
   DOORBELL:
     ffmpeg:
       inputs:

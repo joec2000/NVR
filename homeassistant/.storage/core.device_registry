@@ -194,6 +194,54 @@
         "name": "Frigate",
         "sw_version": null,
         "via_device_id": "0168a0844a4ef62f65735642a9e805a9"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "13e0d2d1c8824cfa04a86bbeebd6b59a"
+        ],
+        "configuration_url": "http://frigate:5000/cameras/IP_CAM_GARAGE",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6891244aa48bb2b292a7fdb1dae4819e",
+        "identifiers": [
+          [
+            "frigate",
+            "13e0d2d1c8824cfa04a86bbeebd6b59a:ip_cam_garage"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "3.0.0/0.11.1-2eada21",
+        "name_by_user": null,
+        "name": "Ip Cam Garage",
+        "sw_version": null,
+        "via_device_id": "0168a0844a4ef62f65735642a9e805a9"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d7adb7e7eeb562ff5fa1b3e339be6ef2"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8e59eefc61f86298eb1b673eb205745d",
+        "identifiers": [
+          [
+            "mobile_app",
+            "47156a56ec87173c"
+          ]
+        ],
+        "manufacturer": "Google",
+        "model": "Pixel 6",
+        "name_by_user": null,
+        "name": "Pixel 6",
+        "sw_version": "33",
+        "via_device_id": null
       }
     ],
     "deleted_devices": []

@@ -7,7 +7,9 @@
       {
         "name": "Joe Collins",
         "user_id": "d299d7569da84904b20e945186c5b629",
-        "device_trackers": [],
+        "device_trackers": [
+          "device_tracker.pixel_6"
+        ],
         "id": "joe_collins"
       }
     ]
