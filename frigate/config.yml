@@ -7,8 +7,8 @@ mqtt:
 #    device: usb
 
 detect:
-  width: 1920
-  height: 1080  
+  width: 704
+  height: 480  
 
 ffmpeg:
 #  hwaccel_args: -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format yuv420p
