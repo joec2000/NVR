@@ -7,8 +7,8 @@ mqtt:
 #    device: usb
 
 detect:
-  width: 720
-  height: 480  
+  width: 1920
+  height: 1080  
 
 ffmpeg:
 #  hwaccel_args: -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format yuv420p
@@ -92,8 +92,8 @@ record:
 
 snapshots:
   enabled: True
-  bounding_box: True
-  timestamp: True
+  bounding_box: False
+  timestamp: False
   retain:
     default: 30
 

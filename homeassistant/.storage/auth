@@ -128,7 +128,7 @@
         "access_token_expiration": 1800.0,
         "token": "e8fd231d03fa71dbfe82f842c199c573522a9b4983ff07b79f43516e749ef2614c59e7e0b4f3c6bcdb37829fc171c963dcb4551359cbebd53b8d698967c2dbb4",
         "jwt_key": "d5f6023d0607ffc75b99a8aa524224ce93cb85d3df98b7f638ad033aee3b036af40d9ea03845924968eaa39c0e428d092dd848e281cd276d9d2cb537f303ed10",
-        "last_used_at": "2022-12-20T02:09:33.878829+00:00",
+        "last_used_at": "2022-12-20T14:00:39.062057+00:00",
         "last_used_ip": "10.13.0.1",
         "credential_id": "fd1f14b29d334c9990ff8c0ee758d7e4",
         "version": "2022.12.3"
@@ -144,7 +144,23 @@
         "access_token_expiration": 1800.0,
         "token": "ede76a0f359fa2e23c703946d058fb8a26152165e72b3c329d683bcbe6bef2e9dfd1fea20968b73623950a52185202eff075c21eb2e525ee2fca5d84d8406538",
         "jwt_key": "94dbae474f9c2899b5cef36757df8e36bbe2fed3df2ddcb2e70f2df4d6310f664de0aa773455552a7eb6761a07f670cfa8b82834e980c93fe21bb9c20681e444",
-        "last_used_at": "2022-12-20T02:10:41.446615+00:00",
+        "last_used_at": "2022-12-26T14:39:02.321423+00:00",
+        "last_used_ip": "10.13.0.1",
+        "credential_id": "fd1f14b29d334c9990ff8c0ee758d7e4",
+        "version": "2022.12.6"
+      },
+      {
+        "id": "5168c72b15d34c50b5580e3144e8f959",
+        "user_id": "d299d7569da84904b20e945186c5b629",
+        "client_id": "http://frigate:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2022-12-26T14:30:59.346625+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "c3266d33d8487c118a24c5f36760a1087667270ea1fd84791eb4399e8427b6b27520aab78cd0ffbc6847a2866f65a38d4dd4537d33ba0b0c18954e2baa963167",
+        "jwt_key": "dad6cf8735f3b1082ec42f74cbedcd6b4f036f670270d8ea2bdfb2e9a34bda8eb37991d7bb699d218d43bf6b00068f4a49129c6bbb4181cf01cd2b516478731e",
+        "last_used_at": "2022-12-26T14:30:59.346891+00:00",
         "last_used_ip": "10.13.0.1",
         "credential_id": "fd1f14b29d334c9990ff8c0ee758d7e4",
         "version": "2022.12.6"

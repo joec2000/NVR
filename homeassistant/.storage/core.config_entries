@@ -51,7 +51,7 @@
         "domain": "hacs",
         "title": "",
         "data": {
-          "token": "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"
+          "token": "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"
         },
         "options": {
           "sidepanel_title": "HACS",
@@ -110,7 +110,7 @@
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2022.11.0-full (2948)",
+          "app_version": "2022.12.0-full (3026)",
           "device_name": "Pixel 6",
           "manufacturer": "Google",
           "model": "Pixel 6",

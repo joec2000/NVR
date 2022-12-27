@@ -18,11 +18,11 @@
       "category": "integration",
       "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
       "domain": "hacs",
-      "downloads": 11218,
-      "etag_repository": "W/\"fb73efa06b0622348ee7d3232ad6917702ea5e41ea0988f170a4ce9bb079cbeb\"",
+      "downloads": 48595,
+      "etag_repository": "W/\"a6d9f16a9f6c622302385dcaeb36e307afcb4e3436933fdc1c198e2e6ea9c704\"",
       "full_name": "hacs/integration",
-      "last_updated": "2022-12-19T13:05:55Z",
-      "stargazers_count": 3170,
+      "last_updated": "2022-12-26T06:00:40Z",
+      "stargazers_count": 3189,
       "topics": [
         "community",
         "package-manager"
@@ -33,7 +33,7 @@
       "last_commit": "b3c9b17",
       "last_version": "1.29.0",
       "manifest_name": "HACS",
-      "open_issues": 2,
+      "open_issues": 4,
       "published_tags": [
         "1.29.0",
         "1.28.4",
@@ -41,10 +41,10 @@
         "1.28.2",
         "1.28.1"
       ],
-      "pushed_at": "2022-12-19T13:05:55",
+      "pushed_at": "2022-12-26T06:00:40",
       "releases": true,
       "version_installed": "1.28.4",
-      "last_fetched": 1671497123.679971
+      "last_fetched": 1672065324.531449
     },
     "191831638": {
       "repository_manifest": {
@@ -15693,10 +15693,10 @@
       "category": "integration",
       "description": "Frigate integration for Home Assistant",
       "domain": "frigate",
-      "etag_repository": "W/\"f868671c934743a9b1b5856c311ee7e04f64d7d42cbbb1e4b7662dfff5811f26\"",
+      "etag_repository": "W/\"b581182c1b56d2fac4a28e46d2be9c2e1e3da2b1312aded18efb37dd35f71c2b\"",
       "full_name": "blakeblackshear/frigate-hass-integration",
-      "last_updated": "2022-12-19T23:56:21Z",
-      "stargazers_count": 317,
+      "last_updated": "2022-12-23T06:09:14Z",
+      "stargazers_count": 320,
       "topics": [
         "ai",
         "camera",
@@ -15708,10 +15708,10 @@
       "default_branch": "master",
       "installed_commit": "97ce2d8",
       "installed": true,
-      "last_commit": "7771952",
+      "last_commit": "c9ae546",
       "last_version": "v3.0.0",
       "manifest_name": "Frigate",
-      "open_issues": 27,
+      "open_issues": 25,
       "published_tags": [
         "v3.0.0",
         "v2.3",
@@ -15719,10 +15719,10 @@
         "v2.2.1",
         "v2.2.0"
       ],
-      "pushed_at": "2022-12-19T23:56:21",
+      "pushed_at": "2022-12-23T06:09:14",
       "releases": true,
       "version_installed": "v3.0.0",
-      "last_fetched": 1671497123.507161
+      "last_fetched": 1672065324.354858
     },
     "255258767": {
       "repository_manifest": {
@@ -24813,6 +24813,128 @@
       "topics": [
         "electric-vehicles",
         "homeassistant-custom-component"
+      ]
+    },
+    "572297252": {
+      "repository_manifest": {
+        "name": "IrrigationProgram Custom Card",
+        "render_readme": true,
+        "filename": "irrigation-card.js"
+      },
+      "category": "plugin",
+      "description": "Companion card for Irrigation-V5",
+      "etag_repository": "W/\"a39093e2007798186c2bad022d00e47749be102ddc3a903eb7770365a623bb2d\"",
+      "full_name": "petergridge/Irrigation-Card",
+      "new": true,
+      "stargazers_count": 2,
+      "topics": [
+        "irrigation",
+        "irrigation-v5"
+      ]
+    },
+    "563077911": {
+      "repository_manifest": {
+        "name": "China Southern Power Grid Statistics",
+        "render_readme": true,
+        "homeassistant": "2022.8"
+      },
+      "authors": [
+        "@cubicpill"
+      ],
+      "category": "integration",
+      "description": "Home Assistant intergration to get statictics from China Southern Power Grid (CSG) 南方电网HA集成",
+      "domain": "china_southern_power_grid_stat",
+      "etag_repository": "W/\"7356eae8a6e8ee61440512cdf5182464335c91011c90cfce8565779b744ae460\"",
+      "full_name": "CubicPill/china_southern_power_grid_stat",
+      "new": true,
+      "stargazers_count": 17
+    },
+    "494545750": {
+      "repository_manifest": {
+        "name": "Peaqhvac",
+        "homeassistant": "2022.10.5",
+        "zip_release": true,
+        "filename": "peaqhvaq.zip",
+        "render_readme": true
+      },
+      "authors": [
+        "@elden1337"
+      ],
+      "category": "integration",
+      "description": "Home Assistant custom component to help hvac-systems stay below peak hourly energy levels and prioritize cheap hours to heat your home.",
+      "domain": "peaqhvac",
+      "etag_repository": "W/\"8515534564f6c1cf5fb670cfd1495fbd266b7731df17172743752708e4184980\"",
+      "full_name": "elden1337/hass-peaqhvac",
+      "new": true,
+      "topics": [
+        "nibe",
+        "peak-shaving",
+        "smart-pricing"
+      ]
+    },
+    "574693804": {
+      "repository_manifest": {
+        "name": "Hypervolt Charger",
+        "country": "GB"
+      },
+      "authors": [
+        "@gndean"
+      ],
+      "category": "integration",
+      "description": "Home Assistant integration for Hypervolt EV charger",
+      "domain": "hypervolt_charger",
+      "etag_repository": "W/\"b2b461f157bb45261e1dba8da85577a697e5ea7f38450cb0e79ea6b788d13f16\"",
+      "full_name": "gndean/home-assistant-hypervolt-charger",
+      "new": true,
+      "stargazers_count": 14,
+      "topics": [
+        "ev-charger",
+        "ev-charging",
+        "hypervolt"
+      ]
+    },
+    "369883961": {
+      "repository_manifest": {
+        "name": "Silence Scooter Integration",
+        "hacs": "1.6.0",
+        "render_readme": true
+      },
+      "authors": [
+        "@lorenzo-deluca"
+      ],
+      "category": "integration",
+      "description": "Home Assistant Integration for Silence Scooter",
+      "domain": "silencescooter",
+      "etag_repository": "W/\"29ba12fa683398186bf7af5af595cde968745fc2d6b5fac5e8509af937c30a68\"",
+      "full_name": "lorenzo-deluca/homeassistant-silence",
+      "new": true,
+      "stargazers_count": 9,
+      "topics": [
+        "electric-vehicles",
+        "silence",
+        "silence-s01",
+        "silence-scooter"
+      ]
+    },
+    "544105569": {
+      "repository_manifest": {
+        "name": "BenQ projector",
+        "homeassistant": "2022.11.0"
+      },
+      "authors": [
+        "@rrooggiieerr"
+      ],
+      "category": "integration",
+      "description": "Home Assistant integration for BenQ projectors over the serial interface.",
+      "domain": "benqprojector",
+      "etag_repository": "W/\"437405a7001fa863b5239b9525664420b73fb6db545de455b0e5d1f38fb4f086\"",
+      "full_name": "rrooggiieerr/homeassistant-benqprojector",
+      "new": true,
+      "stargazers_count": 3,
+      "topics": [
+        "benq",
+        "projector",
+        "projector-control"
       ]
     }
   }

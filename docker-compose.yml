@@ -1,20 +1,38 @@
 version: "3.9"
 
 services:
-  homeassistant:
-    container_name: homeassistant
-    image: "ghcr.io/home-assistant/home-assistant:stable"
-    volumes:
-      - /media/nvr/homeassistant:/config
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
-    restart: always
-    privileged: true
+  deepstack:
+    container_name: deepstack
+    restart: unless-stopped
+    image: deepquestai/deepstack
     ports:
-      - "8123:8123"
-    depends_on:
-      mqtt:
-        condition: service_started
+      - "5001:5000"
+    environment:
+      - VISION-FACE=True
+#      - API-KEY="foobar"
+    volumes:
+      - /media/nvr/deepstack:/modelstore/detection
+  deepstack_ui:
+    container_name: deepstack_ui
+    restart: unless-stopped
+    image: robmarkcole/deepstack-ui:latest
+    environment: 
+      - DEEPSTACK_IP=10.13.0.9
+      - DEEPSTACK_PORT=5001
+#      - DEEPSTACK_API_KEY="foobar"
+      - DEEPSTACK_TIMEOUT=20
+#      - DEEPSTACK_CUSTOM_MODEL=fire
+      - DEEPSTACK_UI_DEBUG_MODE=True
+    ports:
+      - '8501:8501'
+  double-take:
+    container_name: double-take
+    image: jakowenko/double-take
+    restart: always
+    volumes:
+      - /media/nvr/double-take:/.storage
+    ports:
+      - "3000:3000"
   frigate:
     container_name: frigate
     privileged: true # this may not be necessary for all setups

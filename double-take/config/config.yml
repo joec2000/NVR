@@ -1,0 +1,15 @@
+# Double Take
+# Learn more at https://github.com/jakowenko/double-take/#configuration
+auth: false
+mqtt:
+  host: mqtt
+  
+frigate:
+  url: http://10.13.0.9:5000
+  update_sub_labels: true
+  
+detectors:
+  deepstack:
+    url: http://10.13.0.9:5001
+    key: foobar
+    opencv_face_required: true

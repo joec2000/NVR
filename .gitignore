@@ -1,3 +1,6 @@
 .env
 frigate/recordings/**
 frigate/clips/**
+double-take/matches/**
+double-take/latest/**
+double-take/train/**
