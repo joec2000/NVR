@@ -1,5 +1,0 @@
-2022-12-26 09:35:17.573 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration frigate which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-12-26 09:35:17.577 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-12-26 09:36:18.763 ERROR (MainThread) [frontend.js.latest.202212130] :0:0 ResizeObserver loop completed with undelivered notifications.
-2022-12-26 09:36:27.710 ERROR (MainThread) [frontend.js.latest.202212130] :0:0 ResizeObserver loop completed with undelivered notifications.
-2022-12-26 09:38:49.260 ERROR (MainThread) [frontend.js.latest.202212130] :0:0 ResizeObserver loop completed with undelivered notifications.
