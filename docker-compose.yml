@@ -1,55 +1,53 @@
 version: "3.9"
 
 services:
-  deepstack:
-    container_name: deepstack
-    restart: unless-stopped
-    image: deepquestai/deepstack
-    ports:
-      - "5001:5000"
-    environment:
-      - VISION-FACE=True
-#      - API-KEY="foobar"
-    volumes:
-      - /media/nvr/deepstack:/modelstore/detection
-  deepstack_ui:
-    container_name: deepstack_ui
-    restart: unless-stopped
-    image: robmarkcole/deepstack-ui:latest
-    environment: 
-      - DEEPSTACK_IP=10.13.0.9
-      - DEEPSTACK_PORT=5001
-#      - DEEPSTACK_API_KEY="foobar"
-      - DEEPSTACK_TIMEOUT=20
-#      - DEEPSTACK_CUSTOM_MODEL=fire
-      - DEEPSTACK_UI_DEBUG_MODE=True
-    ports:
-      - '8501:8501'
-  double-take:
-    container_name: double-take
-    image: jakowenko/double-take
-    restart: always
-    volumes:
-      - /media/nvr/double-take:/.storage
-    ports:
-      - "3000:3000"
+#  deepstack:
+#    container_name: deepstack
+#    restart: unless-stopped
+#    image: deepquestai/deepstack
+#    ports:
+#      - "5001:5000"
+#    environment:
+#      - VISION-FACE=True
+#    volumes:
+#      - /nvr/deepstack:/modelstore/detection
+#  deepstack_ui:
+#    container_name: deepstack_ui
+#    restart: unless-stopped
+#    image: robmarkcole/deepstack-ui:latest
+#    environment: 
+#      - DEEPSTACK_IP=10.13.0.9
+#      - DEEPSTACK_PORT=5001
+#      - DEEPSTACK_TIMEOUT=20
+#      - DEEPSTACK_UI_DEBUG_MODE=True
+#    ports:
+#      - '8501:8501'
+#  double-take:
+#    container_name: double-take
+#    image: jakowenko/double-take
+#    restart: always
+#    volumes:
+#      - /nvr/double-take:/.storage
+#    ports:
+#      - "3000:3000"
   frigate:
     container_name: frigate
     privileged: true # this may not be necessary for all setups
     restart: always
-    image: blakeblackshear/frigate:stable
+#    image: ghcr.io/blakeblackshear/frigate:0.13.2
+    image: ghcr.io/blakeblackshear/frigate:0.14.1
     shm_size: "256mb" # update for your cameras based on calculation above
     depends_on:
       mqtt:
         condition: service_started
     devices:
-#     - /dev/bus/usb:/dev/bus/usb # passes the USB Coral, needs to be modified for other versions
-#     - /dev/apex_0:/dev/apex_0 # passes a PCIe Coral, follow driver instructions here https://coral.ai/docs/m2/get-started/#2a-on-linux
+      - /dev/bus/usb:/dev/bus/usb # passes the USB Coral, needs to be modified for other versions
+      - /dev/apex_0:/dev/apex_0 # passes a PCIe Coral, follow driver instructions here https://coral.ai/docs/m2/get-started/#2a-on-linux
       - /dev/dri/renderD128 # for intel hwaccel, needs to be updated for your hardware
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /media/nvr/frigate/config.yml:/config/config.yml:ro
-      - /media/nvr/frigate:/media/frigate
+      - /nvr/frigate/config/:/config/
+      - /nvr/frigate:/media/frigate
       - type: tmpfs # Optional: 1GB of memory, reduces SSD/SD Card wear
         target: /tmp/cache
         tmpfs:

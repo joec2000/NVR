@@ -1,6 +1,8 @@
 .env
 frigate/recordings/**
 frigate/clips/**
-double-take/matches/**
-double-take/latest/**
-double-take/train/**
+double-take/**
+frigate/.*
+frigate/config/.*
+frigate/config/*.db
+frigate/config/frigate.db

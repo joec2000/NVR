@@ -1,0 +1,148 @@
+mqtt:
+  host: mqtt
+
+detectors:
+  coral:
+    type: edgetpu
+    device: pci:0
+    model:
+      path: /edgetpu_model.tflite
+
+detect:
+  width: 640
+  height: 480
+  fps: 5
+  stationary:
+    interval: 50
+    threshold: 50
+
+logger:
+  logs:
+    frigate.record: debug
+    frigate.ptz.autotrack: debug
+    frigate.ptz.onvif: debug
+
+ffmpeg:
+  #hwaccel_args: -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format yuv420p
+  hwaccel_args: preset-intel-qsv-h264  
+  #hwaccel_args: -c:v h264_qsv
+  #hwaccel_args: preset-vaapi
+  #hwaccel_args: "auto"
+
+cameras:
+
+  IP_CAM_DRIVEWAY_1:
+    ffmpeg:
+      inputs:
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.10:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.10:554/cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+    onvif:
+      host: 10.13.0.10
+      port: 80
+      user: admin
+      password: "{FRIGATE_RTSP_PASSWORD}"
+      autotracking:
+        enabled: false
+        calibrate_on_startup: false
+        zooming: disabled
+        track:
+          - person
+          - car
+        required_zones: [zone_0]
+        movement_weights: 0.2, 1.0, 6.642420291900635, 53783446.11234844, -25900335.400344003
+    zones:
+      zone_0:
+        coordinates: 0,1080,1920,1080,1920,0,0,0
+
+  IP_CAM_DRIVEWAY_2:
+    ffmpeg:
+      inputs:
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.5:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.5:554/cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+
+  IP_CAM_DRIVEWAY_3:
+    ffmpeg:
+      inputs:
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.6:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.6:554/cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+
+  IP_CAM_NORTHWEST:
+    ffmpeg:
+      inputs:
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.7:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.7:554/cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+
+  IP_CAM_GARAGE:
+    ffmpeg:
+      inputs:
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.3:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.3:554/cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+
+  DOORBELL:
+    ffmpeg:
+      inputs:
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.8:554/cam/realmonitor?channel=1&subtype=0
+          roles:
+            - record
+        - path: 
+            rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.13.0.8:554/cam/realmonitor?channel=1&subtype=1
+          roles:
+            - detect
+objects:
+  track:
+    - person
+    - car
+
+record:
+  enabled: true
+  events:
+    pre_capture: 30
+    post_capture: 60
+    objects:
+      - person
+      - car
+    retain:
+      default: 30
+      mode: active_objects
+
+snapshots:
+  enabled: true
+  bounding_box: false
+  timestamp: false
+  retain:
+    default: 30
+
+timestamp_style:
+  format: '%Y/%m/%d %H:%M:%S'
+version: 0.14
